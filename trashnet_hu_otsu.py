@@ -143,9 +143,9 @@ def main(k):
     report_text = "\n".join(report_lines)
     print("\n" + report_text)
 
-    with open("results.txt", "w") as f:
+    with open("results_otsu.txt", "w") as f:
         f.write(report_text)
-    print("\n💾 Results saved to results.txt\n")
+    print("\n💾 Results saved to results_otsu.txt\n")
 
 if __name__=="__main__":
     ap = argparse.ArgumentParser()
