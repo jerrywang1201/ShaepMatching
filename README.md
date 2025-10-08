@@ -16,7 +16,10 @@ pip install --upgrade pip
 pip install datasets huggingface_hub pillow opencv-python numpy pandas scikit-learn
 
 # 2) run experiment (5-fold kNN; saves results.txt)
-python trashnet_hu_plus_save.py --k 5
+python trashnet_hu_otsu.py --k 5
+
+python trashnet_hu_HSV_Otsu.py --k 5 --fd_k 20
+
 
 What this repo does (in code terms)
 load HF dataset → garythung/trashnet
