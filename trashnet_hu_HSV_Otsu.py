@@ -159,7 +159,7 @@ def main(k, fd_k):
     report_lines.append(rep_ma)
     report_text = "\n".join(report_lines)
     print("\n" + report_text)
-    with open("results.txt", "w") as f:
+    with open("results1.txt", "w") as f:
         f.write(report_text)
     print("\n💾 Results saved to results.txt\n")
 
