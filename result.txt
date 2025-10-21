@@ -1,0 +1,30 @@
+===== TrashNet CNN Classification Result =====
+Best Test Accuracy: 94.96%
+Model: ResNet18 (pretrained)
+Input size: 224x224, Epochs: 20, Batch size: 32
+Augmentation: RandomCrop+Flip+ColorJitter
+Date: 2025-10-21 00:22:33.701045
+
+
+Classification Report:
+              precision    recall  f1-score   support
+
+   cardboard     0.9679    0.9379    0.9527       161
+       glass     0.9787    0.9200    0.9485       200
+       metal     0.9045    0.9817    0.9415       164
+       paper     0.9619    0.9538    0.9578       238
+     plastic     0.9583    0.9534    0.9558       193
+       trash     0.8689    0.9636    0.9138        55
+
+    accuracy                         0.9496      1011
+   macro avg     0.9400    0.9517    0.9450      1011
+weighted avg     0.9511    0.9496    0.9497      1011
+
+
+Confusion Matrix:
+[[151   0   2   8   0   0]
+ [  0 184   9   0   7   0]
+ [  0   2 161   1   0   0]
+ [  4   0   1 227   0   6]
+ [  0   2   5   0 184   2]
+ [  1   0   0   0   1  53]]

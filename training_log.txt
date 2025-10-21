@@ -1,0 +1,55 @@
+22:04:38 | Using device: mps
+22:04:38 | Loading dataset (trashnet)...
+22:07:15 | Dataset ready. Train=4043, Test=1011, Classes=['cardboard', 'glass', 'metal', 'paper', 'plastic', 'trash']
+22:11:25 | Class weights: [0.34  0.273 0.334 0.231 0.284 1.   ]
+22:11:26 | Warmup training (fc only)...
+22:18:01 | [Warmup 1/5] train 1.1167/50.16%  test 0.9224/61.72%
+22:24:29 | [Warmup 2/5] train 0.7061/69.23%  test 0.7209/71.91%
+22:30:48 | [Warmup 3/5] train 0.6161/75.12%  test 0.6076/77.84%
+22:37:11 | [Warmup 4/5] train 0.5541/76.97%  test 0.6044/77.94%
+22:43:35 | [Warmup 5/5] train 0.5272/77.76%  test 0.6304/74.58%
+22:43:35 | Finetuning full network...
+22:50:06 | [Finetune 1/15] train 0.7412/72.72%  test 0.6844/73.10%
+22:56:40 | [Finetune 2/15] train 0.4030/82.64%  test 0.6766/73.29%
+23:03:06 | [Finetune 3/15] train 0.3093/87.21%  test 0.6561/76.26%
+23:09:40 | [Finetune 4/15] train 0.2416/89.71%  test 0.4694/83.88%
+23:09:40 | 🔥 New best accuracy: 83.88%
+23:16:09 | [Finetune 5/15] train 0.1560/92.98%  test 0.4129/86.55%
+23:16:09 | 🔥 New best accuracy: 86.55%
+23:22:39 | [Finetune 6/15] train 0.1147/95.15%  test 0.4225/86.15%
+23:29:10 | [Finetune 7/15] train 0.0892/96.12%  test 0.2771/91.49%
+23:29:10 | 🔥 New best accuracy: 91.49%
+23:35:36 | [Finetune 8/15] train 0.0643/97.13%  test 0.2131/93.18%
+23:35:36 | 🔥 New best accuracy: 93.18%
+23:42:09 | [Finetune 9/15] train 0.0670/97.16%  test 0.2656/91.39%
+23:48:44 | [Finetune 10/15] train 0.0454/98.07%  test 0.2446/92.58%
+23:55:16 | [Finetune 11/15] train 0.0233/99.08%  test 0.2090/93.18%
+00:01:45 | [Finetune 12/15] train 0.0204/99.01%  test 0.1992/93.77%
+00:01:45 | 🔥 New best accuracy: 93.77%
+00:08:12 | [Finetune 13/15] train 0.0143/99.63%  test 0.1805/94.76%
+00:08:12 | 🔥 New best accuracy: 94.76%
+00:14:46 | [Finetune 14/15] train 0.0121/99.48%  test 0.1780/94.96%
+00:14:46 | 🔥 New best accuracy: 94.96%
+00:21:18 | [Finetune 15/15] train 0.0114/99.68%  test 0.1825/94.76%
+00:22:33 | ✅ Final test accuracy: 94.96%
+00:22:33 | 
+              precision    recall  f1-score   support
+
+   cardboard     0.9679    0.9379    0.9527       161
+       glass     0.9787    0.9200    0.9485       200
+       metal     0.9045    0.9817    0.9415       164
+       paper     0.9619    0.9538    0.9578       238
+     plastic     0.9583    0.9534    0.9558       193
+       trash     0.8689    0.9636    0.9138        55
+
+    accuracy                         0.9496      1011
+   macro avg     0.9400    0.9517    0.9450      1011
+weighted avg     0.9511    0.9496    0.9497      1011
+
+00:22:33 | Confusion Matrix:
+[[151   0   2   8   0   0]
+ [  0 184   9   0   7   0]
+ [  0   2 161   1   0   0]
+ [  4   0   1 227   0   6]
+ [  0   2   5   0 184   2]
+ [  1   0   0   0   1  53]]
